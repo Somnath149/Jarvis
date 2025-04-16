@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarvis</title>
+    <link rel="stylesheet" href="jarvis.css">
+</head>
+<body>
+    <div id="main">
+        <div class="page1">
+            <img src="ja.png">
+            <h1>i'm <span id="j">jarvis</span></h1>
+            
+            <video class="voice" src="audio-spectrum-animation-free-video.mp4"></video>
+            <button class="btn"><span class="content">Click here for talk to me</span></button>
+
+            
+
+        <div id="loginmodel" style="display: none; position: fixed; display: flex; justify-content: center; align-items: center; z-index: 99;">
+            <div id="model-content">
+                <form id="loginform" style="color: red; background-color: aqua;">
+                    <input type="text" id="username" required>
+                    <input type="password" id="password" required>
+
+                    <p id="errormessage" style="color: red; display:none;">invalid</p>
+                    <button type="submit">login</button>
+                </form>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <script src="jarvis.js"></script>
+</body>
+</html>
