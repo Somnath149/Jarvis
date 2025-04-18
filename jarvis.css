@@ -1,61 +1,108 @@
-*{
-    padding: 0%;
-    margin: 0%;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.page1{
+body {
+    background-color: #121212;
+    color: #ffffff;
     height: 100vh;
-    width: 100%;
-    background-color: #030303;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+#main {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
     flex-direction: column;
 }
 
-.page1 img{
-    height: 50%;
-    width: 30%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50px;
+.page1 {
+    text-align: center;
+    position: relative;
+    max-width: 90%;
+    margin-top: 50px;
 }
 
-.page1 h1,span{
-    color: #fff;
+
+.page1 img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    animation: pulse 3s infinite ease-in-out;
 }
 
-.page1 span{
-    font-size: 6vh;
+.page1 h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
 }
 
-.page1 video{
-    height: 30%;
-    display: none;
+#j {
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
 }
 
-.page1 button{
-    width: 20%;
-    height: 4vh;
-    border-radius: 50px;
-    background: linear-gradient(to right, rgb(130, 130, 204), white, rgb(84, 84, 207));
-    margin-top: 2%;
-}
-
-.page1 span{
-    font-size: 18px;
+.btn {
+    background-color: #00ffcc;
     color: #000;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    display: inline-block;
-    transition: transform 0.3s ease;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.page1 .btn:hover span{
-    transform: scale(1.4);
+.btn:hover {
+    background-color: #00cc99;
+    transform: translateY(-3px);
 }
 
-#j{
-    color: red;
-    font-size: 2vw;
-    font-weight: 300;
+.content {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.voice {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #00ffcc;
+    animation: fadeIn 3s ease;
+}
+
+
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
