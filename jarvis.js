@@ -60,9 +60,6 @@ function takeCommand(message){
     else if(message.includes("who created you")){
         speak("i'm jarvis created by somnath sir and who are you?")
     }
-    else if(message.includes("who is vaibhav")){
-        speak("vaibhav is gay")
-    }
     else if(message.includes("open youtube")){
         speak("opening youtube")
         window.open("https://www.youtube.com")
@@ -93,29 +90,3 @@ function takeCommand(message){
     }
 }
 
-let islogin= false;
-
-        const main= document.getElementById("main");
-        const loginmodel= document.getElementById("loginmodel");
-        const loginform= document.getElementById("loginform");
-        const errormessage= document.getElementById("errormessage");
-        loginmodel.style.display="none"
-
-        main.addEventListener("click",()=>{
-            if(islogin){
-                console.log("true")
-            }
-            else{
-                loginmodel.style.display="flex";
-                console.log("false")
-            }
-        });
-
-        loginform.addEventListener("submit",(e)=>{
-            e.preventDefault();
-
-            if(true){
-                islogin=true;
-                loginmodel.style.display="none";
-            }
-        });
